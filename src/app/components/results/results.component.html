@@ -1,0 +1,17 @@
+<div
+  class="absolute top-0 mx-auto w-screen h-screen flex items-center justify-center bg-transparent backdrop-blur-sm text-slate-800"
+>
+  <div class="bg-white w-6/12 h-fit p-10">
+    <p class="text-center text-xl">
+      La temperatura en <span class="font-semibold">{{ ciudad }}</span> es de
+      <span class="font-semibold">{{ grados }} C</span>
+    </p>
+    <button
+      type="submit"
+      class="text-white block mx-auto mt-9 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      (click)="handleButton()"
+    >
+      Averiguar otra ciudad
+    </button>
+  </div>
+</div>
